@@ -41,10 +41,11 @@ export default {
 
 <template>
     <div class="area">
-        <p>我是分頁1</p>
+        <h2>我是分頁1</h2>
         <button @click="changeRounded">別案</button>
         <div class="box" v-bind:class="{rounded: isRounded}"></div>
     </div>
+    <hr />
     <img v-bind:src="imgArr[imgNum]">
     <button @click="changeImg">changeImg</button>
 </template>
@@ -53,8 +54,8 @@ export default {
     
     .area {
         position: relative;
-        width: 500px;
-        height: 500px;
+        width: 350px;
+        height: 350px;
     }
     .box {
         height: 200px;
@@ -68,5 +69,9 @@ export default {
     .rounded {
         border-radius: 2rem;
         bottom: 50px;
+    }
+
+    hr {
+        margin: 50px 0;
     }
 </style>

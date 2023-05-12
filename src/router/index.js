@@ -22,6 +22,26 @@ const router = createRouter({
       path: '/props',
       name: 'Props',
       component: () => import('../views/Props.vue')
+    },
+    {
+      path: '/emit',
+      name: 'Emit',
+      component: () =>import('../views/Emit.vue')
+    },
+    {
+      path: '/vShow',
+      name: 'VShow',
+      component: () =>import('../views/VShow.vue')
+    },
+    {
+      path: '/routerView',
+      name: 'RouterView',
+      component: () =>import('../views/RouterView.vue')
+    },
+    {
+      path: '/modal',
+      name: 'Modal',
+      component: () =>import('../views/Modal.vue')
     }
   ]
 })
